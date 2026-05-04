@@ -1,18 +1,18 @@
 {
-  "name": "scottydotcom-dark-theme",
-  "displayName": "Midnight Koi",
-  "description": "cozy dark mode theme made by @scottydotcom",
+  "name": "soraplex-midnightkoi",
+  "displayName": "MidnightKoi",
+  "description": "cozy dark mode theme made by @soraplex",
   "version": "0.2.2",
-  "publisher": "scottydotcom",
+  "publisher": "soraplex",
   "icon": "img/logo.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/scottydotcom/midnight-koi"
+    "url": "https://github.com/soraplex/midnightKoi"
   },
   "keywords": [
     "dark theme",
     "cozy theme",
-    "scottydotcom",
+    "soraplex",
     "blue and green theme",
     "night mode",
     "relaxing colors",
