@@ -6,8 +6,7 @@
   "publisher": "soraplex",
   "icon": "img/logo.png",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/soraplex/midnightKoi"
+    "type": "git"
   },
   "keywords": [
     "dark theme",
