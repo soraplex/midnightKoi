@@ -338,6 +338,46 @@
       "settings": {
         "foreground": "#6eb1a0"
       }
-    }
+    },
+    // ============================
+    // Variables
+    // ============================
+    {
+      "name": "Variables",
+      "scope": [
+        "variable",
+        "variable.other.property.js",
+        "variable.parameter.js",
+        "variable.import.parameter.js",
+        "variable.other.class.js",
+        "variable.parameter.function.language.special",
+        "variable.parameter",
+        "variable.language.fenced.markdown",
+        "support.other.variable",
+        "variable.parameter.function.python",
+        "variable.other.readwrite.python"
+      ],
+      "settings": {
+        "foreground": "#6aacc6"
+      }
+    },
+    {
+      "scope": [
+        "variable.other.object.js",
+        "variable.other.constant.js",
+        "variable.other.object.property.js",
+        "variable.other.readwrite.js",
+        "support.variable.magic.python"
+      ],
+      "settings": {
+        "foreground": "#97c1cc"
+      }
+    },
+    {
+      "scope": ["variable.parameter.keyframe-list.css"],
+      "settings": {
+        "foreground": "#DEB887"
+      }
+    },
   ]
 }
