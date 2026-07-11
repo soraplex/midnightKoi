@@ -216,7 +216,6 @@
       }
     },
     {
-      "name": "HTML",
       "scope": [
         "source.css entity.other.attribute-name",
         "source.scss entity.other.attribute-name",
@@ -274,7 +273,6 @@
     // Functions
     // ============================
     {
-      "name": "Functions",
       "scope": [
         "entity.name.function",
         "variable.function",
@@ -304,7 +302,6 @@
     // Types & Classes
     // ============================
     {
-      "name": "Types & Classes",
       "scope": [
         "entity.name",
         "support.type",
@@ -343,7 +340,6 @@
     // Variables
     // ============================
     {
-      "name": "Variables",
       "scope": [
         "variable",
         "variable.other.property.js",
@@ -383,7 +379,6 @@
     // Constants
     // ============================
     {
-      "name": "Constants",
       "scope": [
         "constant.other.color",
         "constant.numeric",
@@ -431,7 +426,6 @@
     // Strings
     // ============================
     {
-      "name": "Strings",
       "scope": [
         "string",
         "string constant.other.placeholder",
@@ -465,7 +459,6 @@
     // CSS / SCSS
     // ============================
     {
-      "name": "CSS / SCSS",
       "scope": [
         "punctuation.definition.interpolation.begin.bracket.curly.scss",
         "punctuation.definition.interpolation.end.bracket.curly.scss",
@@ -503,7 +496,6 @@
     // Comments
     // ============================
     {
-      "name": "Comments",
       "scope": [
         "comment.line.scss",
         "comment.line.double-slash.js",
@@ -529,7 +521,6 @@
     // Markdown
     // ============================
     {
-      "name": "Markdown",
       "scope": [
         "text.html.markdown",
         "markup.fenced_code.block.markdown",
@@ -562,7 +553,6 @@
     // Git
     // ============================
     {
-      "name": "Git",
       "scope": ["markup.inserted", "markup.inserted.git_gutter"],
       "settings": {
         "foreground": "#7fc8b0"
@@ -634,7 +624,6 @@
       }
     },
     {
-      "name": "Misc",
       "scope": [
         "source.js constant.other.object.key.js string.unquoted.label.js",
         "tag.decorator.js entity.name.tag.js",
