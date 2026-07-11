@@ -499,5 +499,32 @@
         "foreground": "#f0d4b4"
       }
     },
+    // ============================
+    // Comments
+    // ============================
+    {
+      "name": "Comments",
+      "scope": [
+        "comment.line.scss",
+        "comment.line.double-slash.js",
+        "punctuation.definition.comment.scss",
+        "punctuation.definition.comment.js",
+        "punctuation.definition.comment.html",
+        "comment.block.html",
+        "markup.quote",
+        "markup.quote punctuation.definition.blockquote.markdown",
+        "punctuation.definition.markdown",
+        "punctuation.definition.raw.markdown",
+        "comment.line.number-sign.python",
+        "comment.block.python",
+        "punctuation.definition.comment.python",
+        "comment.block.js"
+      ],
+      "settings": {
+        "foreground": "#a89f9c",
+        "fontStyle": "italic"
+      }
+    },
+    
   ]
 }
