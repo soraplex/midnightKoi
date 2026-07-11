@@ -634,7 +634,7 @@
       }
     },
     {
-      "name": "Misc From A (missing)",
+      "name": "Misc",
       "scope": [
         "source.js constant.other.object.key.js string.unquoted.label.js",
         "tag.decorator.js entity.name.tag.js",
