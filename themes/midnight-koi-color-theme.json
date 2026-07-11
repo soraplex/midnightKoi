@@ -427,5 +427,39 @@
         "foreground": "#5083a8"
       }
     },
+    // ============================
+    // Strings
+    // ============================
+    {
+      "name": "Strings",
+      "scope": [
+        "string",
+        "string constant.other.placeholder",
+        "string.quoted.double.html",
+        "string.quoted.double.json",
+        "string.quoted.single.scss",
+        "string.quoted.single.js",
+        "string.other.link",
+        "string.other.link.title.markdown",
+        "string.other.link.description.title.markdown",
+        // "markup.inline.raw.string.markdown",
+        "markup.fenced_code.block.markdown",
+        "string.regexp",
+        "string.quoted.single.python",
+        "string.quoted.double.python",
+        "string.interpolated.python",
+        "string.unquoted.docstring.python"
+      ],
+      "settings": {
+        "foreground": "#86a0b8",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["markup.inline.raw.string.markdown"],
+      "settings": {
+        "foreground": "#748a6c"
+      }
+    },
   ]
 }
