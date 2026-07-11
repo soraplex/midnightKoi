@@ -461,5 +461,43 @@
         "foreground": "#748a6c"
       }
     },
+    // ============================
+    // CSS / SCSS
+    // ============================
+    {
+      "name": "CSS / SCSS",
+      "scope": [
+        "punctuation.definition.interpolation.begin.bracket.curly.scss",
+        "punctuation.definition.interpolation.end.bracket.curly.scss",
+        "string.quoted.single.scss",
+        "punctuation.terminator.rule.css",
+        "punctuation.definition.entity.css",
+        "entity.name.tag.reference.scss",
+        "source.sass keyword.control",
+        "source.scss keyword.control",
+        "entity.other.attribute-name.id"
+      ],
+      "settings": {
+        "foreground": "#6eb1a0"
+      }
+    },
+    {
+      "scope": ["keyword.control.at-rule", "entity.name.tag.css"],
+      "settings": {
+        "foreground": "#b47a84"
+      }
+    },
+    {
+      "scope": ["entity.other.attribute-name.pseudo-class", "variable.parameter.keyframe-list.css"],
+      "settings": {
+        "foreground": "#c67a8c"
+      }
+    },
+    {
+      "scope": ["entity.other.attribute-name.class"],
+      "settings": {
+        "foreground": "#f0d4b4"
+      }
+    },
   ]
 }
