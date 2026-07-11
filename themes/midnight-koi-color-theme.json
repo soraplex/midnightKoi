@@ -525,6 +525,39 @@
         "fontStyle": "italic"
       }
     },
+    // ============================
+    // Markdown
+    // ============================
+    {
+      "name": "Markdown",
+      "scope": [
+        "text.html.markdown",
+        "markup.fenced_code.block.markdown",
+        "markup.inline.raw.markdown",
+        "punctuation.definition.list_item.markdown",
+        "punctuation.definition.heading.markdown",
+        "markdown.heading",
+        "markup.heading"
+      ],
+      "settings": {
+        "foreground": "#a6aca6"
+      }
+    },
+    {
+      "scope": [
+        "markup.bold",
+        "markup.bold.markdown",
+        "markup.italic.markdown",
+        "markup.underline",
+        "markup.strike",
+        "markup.raw.block",
+        "meta.dummy.line-break",
+        "meta.separator"
+      ],
+      "settings": {
+        "foreground": "#aa9061"
+      }
+    },
     
   ]
 }
