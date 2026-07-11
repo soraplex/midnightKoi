@@ -612,6 +612,41 @@
       "settings": {
         "foreground": "#ff6b6b"
       }
-    }
+    },
+    // ============================
+    // PYTHON KEYWORDS (ALL)
+    // ============================
+    {
+      "scope": [
+        "keyword.control.python", // if, elif, else, for, while, try, except, finally
+        "keyword.operator.logical.python", // and, or, not
+        "keyword.operator.comparison.python", // is, in, not in, is not
+        "keyword.operator.python", // general operators
+        "keyword.import.python", // import, from
+        "keyword.other.import.python",
+        "storage.type.function.python", // def
+        "storage.type.class.python", // class
+        "keyword.control.flow.python", // return, yield, pass, break, continue
+        "keyword.declaration.python" // global, nonlocal
+      ],
+      "settings": {
+        "foreground": "#449dab"
+      }
+    },
+    {
+      "name": "Misc From A (missing)",
+      "scope": [
+        "source.js constant.other.object.key.js string.unquoted.label.js",
+        "tag.decorator.js entity.name.tag.js",
+        "tag.decorator.js punctuation.definition.tag.js",
+        "*url*",
+        "*link*",
+        "*uri*",
+        "support.other.namespace.use.php"
+      ],
+      "settings": {
+        "foreground": "#7391C8"
+      }
+    },
   ]
 }
