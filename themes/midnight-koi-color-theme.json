@@ -580,5 +580,38 @@
         "foreground": "#c6a86a"
       }
     },
+    // ============================
+    // Diagnostics
+    // ============================
+    {
+      "scope": ["token.info-token"],
+      "settings": {
+        "foreground": "#6aacc6"
+      }
+    },
+    {
+      "scope": ["token.warn-token"],
+      "settings": {
+        "foreground": "#c6a86a"
+      }
+    },
+    {
+      "scope": ["token.error-token"],
+      "settings": {
+        "foreground": "#d27a8a"
+      }
+    },
+    {
+      "scope": ["token.debug-token"],
+      "settings": {
+        "foreground": "#7fc8b0"
+      }
+    },
+    {
+      "scope": ["invalid", "invalid.illegal", "invalid.deprecated"],
+      "settings": {
+        "foreground": "#ff6b6b"
+      }
+    }
   ]
 }
