@@ -558,6 +558,27 @@
         "foreground": "#aa9061"
       }
     },
-    
+    // ============================
+    // Git
+    // ============================
+    {
+      "name": "Git",
+      "scope": ["markup.inserted", "markup.inserted.git_gutter"],
+      "settings": {
+        "foreground": "#7fc8b0"
+      }
+    },
+    {
+      "scope": ["markup.deleted", "markup.deleted.git_gutter"],
+      "settings": {
+        "foreground": "#d27a8a"
+      }
+    },
+    {
+      "scope": ["markup.changed", "markup.changed.git_gutter"],
+      "settings": {
+        "foreground": "#c6a86a"
+      }
+    },
   ]
 }
