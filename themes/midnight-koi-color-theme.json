@@ -299,6 +299,45 @@
       "settings": {
         "foreground": "#449dab"
       }
+    },
+    // ============================
+    // Types & Classes
+    // ============================
+    {
+      "name": "Types & Classes",
+      "scope": [
+        "entity.name",
+        "support.type",
+        "support.type.sys-types",
+        "entity.other.inherited-class",
+        "entity.name.type.class.python",
+        "support.type.python",
+        "storage.type.annotation.python",
+        "entity.name.type.python",
+        "storage.type.class.js"
+      ],
+      "settings": {
+        "foreground": "#97c1cc"
+      }
+    },
+    {
+      "scope": ["support.type.property-name.json"],
+      "settings": {
+        "foreground": "#6eb1a0"
+      }
+    },
+    {
+      "scope": [
+        "source.css support.type.property-name",
+        "source.sass support.type.property-name",
+        "source.scss support.type.property-name",
+        "source.less support.type.property-name",
+        "source.stylus support.type.property-name",
+        "source.postcss support.type.property-name"
+      ],
+      "settings": {
+        "foreground": "#6eb1a0"
+      }
     }
   ]
 }
