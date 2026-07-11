@@ -379,5 +379,53 @@
         "foreground": "#DEB887"
       }
     },
+    // ============================
+    // Constants
+    // ============================
+    {
+      "name": "Constants",
+      "scope": [
+        "constant.other.color",
+        "constant.numeric",
+        "constant.language",
+        "constant.escape",
+        "constant.other.key",
+        "constant.other.object.key.js",
+        "support.constant",
+        "string.unquoted.label.js",
+        "string.regexp",
+        "constant.character.escape",
+        "constant.language.python",
+        "support.constant.python",
+        "constant.numeric.python"
+      ],
+      "settings": {
+        "foreground": "#BBBBBB"
+      }
+    },
+    {
+      "scope": ["constant.other.reference.link.markdown"],
+      "settings": {
+        "foreground": "#6F8865"
+      }
+    },
+    {
+      "scope": [
+        "keyword.control",
+        "keyword.control.js",
+        "keyword.control.trycatch.js",
+        "storage.modifier.js",
+        "keyword.control.flow.js",
+        "keyword.control.import.",
+        "keyword.control.export",
+        "keyword.operator.module.",
+        "keyword.operator.module.js",
+        "keyword.control.import.js",
+        "keyword.control.js"
+      ],
+      "settings": {
+        "foreground": "#5083a8"
+      }
+    },
   ]
 }
