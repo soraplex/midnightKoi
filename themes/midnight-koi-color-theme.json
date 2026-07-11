@@ -206,11 +206,10 @@
     "widget.shadow": "#13141930"
   },
   "tokenColors": [
+    // ============================
+    // HTML
+    // ============================
     {
-      // ============================
-      // HTML
-      // ============================
-
       "scope": ["entity.other.attribute-name.html", "entity.other.attribute-name", "meta.tag.sgml"],
       "settings": {
         "foreground": "#DEB887"
@@ -271,5 +270,35 @@
         "fontStyle": "bold"
       }
     },
+    // ============================
+    // Functions
+    // ============================
+    {
+      "name": "Functions",
+      "scope": [
+        "entity.name.function",
+        "variable.function",
+        "variable.function.constructor",
+        "meta.class-method.js entity.name.function.js",
+        "entity.name.method.js",
+        "support.function",
+        "keyword.other.special-method",
+        "entity.name.function.python", // function names
+        "meta.function-call.python", // foo(), bar()
+        "support.function.builtin.python", // print, len, range, etc.
+        "support.function.magic.python", // __init__, __post_init__, __enter__
+        "meta.decorator.python",
+        "entity.name.function.decorator.python"
+      ],
+      "settings": {
+        "foreground": "#97c1cc"
+      }
+    },
+    {
+      "scope": ["storage.type.function.js", "storage.type.js"],
+      "settings": {
+        "foreground": "#449dab"
+      }
+    }
   ]
 }
