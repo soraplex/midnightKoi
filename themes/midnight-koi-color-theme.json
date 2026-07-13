@@ -292,8 +292,8 @@
         "keyword.control.operator",
         "punctuation.definition.entity.css",
         "keyword.operator.assignment.js",
-        "punctuation.separator.comma.js",
-        "punctuation.definition.string.begin.js",
+        // "punctuation.separator.comma.js",
+        // "punctuation.definition.string.begin.js",
         "punctuation.definition.string.end.js",
         "punctuation.definition.binding-pattern.object.js"
       ],
@@ -406,7 +406,11 @@
         "variable.function.constructor",
         "entity.name.tag.other.html",
         "entity.name.tag.block.any.html",
-        "source.sass keyword.control"
+        "source.sass keyword.control",
+        "punctuation.definition.string.begin.js",
+        "punctuation.definition.string.end.js",
+        
+        
       ],
       "settings": {
         "foreground": "#76baa8"
@@ -421,7 +425,7 @@
     {
       "scope": ["punctuation.definition.string.begin.html", "punctuation.definition.string.end.html"],
       "settings": {
-        "foreground": "#dcc99f"
+        "foreground": "#76baa8"
       }
     },
     {
