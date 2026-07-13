@@ -409,7 +409,7 @@
         "source.sass keyword.control"
       ],
       "settings": {
-        "foreground": "#5083a8"
+        "foreground": "#76baa8"
       }
     },
     {
@@ -421,7 +421,7 @@
     {
       "scope": ["punctuation.definition.string.begin.html", "punctuation.definition.string.end.html"],
       "settings": {
-        "foreground": "#DCC39F"
+        "foreground": "#dcc99f"
       }
     },
     {
