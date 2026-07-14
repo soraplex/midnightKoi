@@ -332,11 +332,7 @@
       }
     },
     {
-      "scope": [
-        "support.variable.magic.python",
-        "support.function.magic.python",
-        "punctuation.definition.python"
-      ],
+      "scope": ["support.variable.magic.python", "support.function.magic.python", "punctuation.definition.python"],
       "settings": {
         "foreground": "#7b93a5"
         // "fontStyle": "bold"
@@ -345,8 +341,6 @@
     {
       "scope": [
         "string.quoted.docstring.multi.python",
-        "punctuation.definition.string.begin.python",
-        "punctuation.definition.string.end.python",
       ],
       "settings": {
         "foreground": "#a0b3a2"
@@ -406,11 +400,7 @@
         "variable.function.constructor",
         "entity.name.tag.other.html",
         "entity.name.tag.block.any.html",
-        "source.sass keyword.control",
-        "punctuation.definition.string.begin.js",
-        "punctuation.definition.string.end.js",
-        
-        
+        "source.sass keyword.control"
       ],
       "settings": {
         "foreground": "#76baa8"
@@ -422,8 +412,15 @@
         "foreground": "#97c1cc"
       }
     },
+    // strings
     {
-      "scope": ["punctuation.definition.string.begin.html", "punctuation.definition.string.end.html"],
+      "scope": [
+        "punctuation.definition.string.begin.html",
+        "punctuation.definition.string.end.html",
+        "punctuation.definition.string.begin.js",
+        "punctuation.definition.string.end.js",
+        
+      ],
       "settings": {
         "foreground": "#76baa8"
       }
@@ -481,7 +478,7 @@
         "support.other.namespace.php",
         "markup.changed.git_gutter",
         "support.type.sys-types",
-        "entity.other.attribute-name.html",
+        "entity.other.attribute-name.html"
       ],
       "settings": {
         "foreground": "#7391C8"
