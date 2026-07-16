@@ -735,6 +735,7 @@
     //     "foreground": "#7a8b78"
     //   }
     // }
+
     // ====================
     // 1. HTML
     // Covers tags, attributes, punctuation, HTML strings, comments.
@@ -749,36 +750,6 @@
       ],
       "settings": {
         "foreground": "#6195e3"
-      }
-    },
-    {
-      "scope": ["text.html.derivative"],
-      "settings": {
-        "foreground": "#BBBBBB"
-      }
-    },
-    {
-      "scope": ["entity.name.tag", "meta.tag.sgml"],
-      "settings": {
-        "foreground": "#7391C8"
-      }
-    },
-    {
-      "scope": ["entity.name.tag.other.html", "entity.name.tag.block.any.html"],
-      "settings": {
-        "foreground": "#76baa8"
-      }
-    },
-    {
-      "scope": ["punctuation.separator.key-value.html"],
-      "settings": {
-        "foreground": "#bbbbbb"
-      }
-    },
-    {
-      "scope": ["entity.other.attribute-name.html"],
-      "settings": {
-        "foreground": "#7391C8"
       }
     },
     {
@@ -804,18 +775,33 @@
         "foreground": "#DEB887"
       }
     },
+    {
+      "scope": ["entity.name.tag", "meta.tag.sgml", "entity.other.attribute-name.html"],
+      "settings": {
+        "foreground": "#7391C8"
+      }
+    },
+    {
+      "scope": ["entity.name.tag.other.html", "entity.name.tag.block.any.html"],
+      "settings": {
+        "foreground": "#76baa8"
+      }
+    },
+    {
+      "scope": ["text.html.derivative", "punctuation.separator.key-value.html"],
+      "settings": {
+        "foreground": "#BBBBBB"
+      }
+    },
 
     // ===================
     // 2. FUNCTIONS
     // Function names, constructors, special methods, support functions.
     // ====================
     {
-      "scope": [
-        // "variable",
-        "entity.name.function"
-      ],
+      "scope": ["support.function", "storage.type.function.js", "storage.type.function.python"],
       "settings": {
-        "fontStyle": "italic"
+        "foreground": "#DEB887"
       }
     },
     {
@@ -827,7 +813,8 @@
     {
       "scope": ["entity.name.function"],
       "settings": {
-        "foreground": "#97c1cc"
+        "foreground": "#97c1cc",
+        "fontStyle": "italic"
       }
     },
     {
@@ -836,17 +823,32 @@
         "foreground": "#7391C8"
       }
     },
-    {
-      "scope": ["support.function", "storage.type.function.js", "storage.type.function.python"],
-      "settings": {
-        "foreground": "#DEB887"
-      }
-    },
 
     // ====================
     // 3. TYPES / CLASSES / SUPPORT
     // Classes, namespaces, inherited classes, module names, type keywords.
     // ====================
+    {
+      "scope": [
+        "support.type",
+        "support.class",
+        "support.type.sys-types",
+        "support.orther.namespace.use.php",
+        "meta.use.php",
+        "support.other.namespace.php",
+        "support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#7391C8"
+      }
+    },
+    {
+      "scope": ["support.variable.magic.python", "support.function.magic.python", "punctuation.definition.python"],
+      "settings": {
+        "foreground": "#7b93a5"
+        // "fontStyle": "bold"
+      }
+    },
     {
       "scope": [
         "storage.type.class", // changes color of class function
@@ -863,42 +865,17 @@
       }
     },
     {
-      "scope": ["support.variable.magic.python", "support.function.magic.python", "punctuation.definition.python"],
-      "settings": {
-        "foreground": "#7b93a5"
-        // "fontStyle": "bold"
-      }
-    },
-    {
       "scope": ["entity.other.inherited-class"],
       "settings": {
         "foreground": "#A6ACA6",
         "fontStyle": ""
       }
     },
-    {
-      "scope": [
-        "support.type",
-        "support.class",
-        "support.type.sys-types",
-        "support.orther.namespace.use.php",
-        "meta.use.php",
-        "support.other.namespace.php"
-      ],
-      "settings": {
-        "foreground": "#7391C8"
-      }
-    },
+
     {
       "scope": ["entity.name.module.js"],
       "settings": {
         "foreground": "#c0caf5"
-      }
-    },
-    {
-      "scope": ["support.type.property-name.json"],
-      "settings": {
-        "foreground": "#7391C8"
       }
     },
     {
@@ -907,26 +884,11 @@
         // "foreground": "#6AACC6"
       }
     },
+
     // ====================
     // 4. VARIABLES
     // Parameters, object properties, read/write variables, constants.
     // ====================
-    {
-      "scope": [
-        "variable.other.readwrite", // changes color of import react, imports as utils and {useeffect"}
-        "variable.language.this" // changes color of 'this' function
-      ],
-      "settings": {
-        "foreground": "#6AACC6",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": ["variable.parameter.js", "variable.parameter.keyframe-list.css"],
-      "settings": {
-        "foreground": "#D6B89F"
-      }
-    },
     {
       "scope": [
         "variable.other.object.js",
@@ -946,11 +908,22 @@
       }
     },
     {
-      "scope": ["support.other.variable"],
+      "scope": [
+        "variable.other.readwrite", // changes color of import react, imports as utils and {useeffect"}
+        "variable.language.this" // changes color of 'this' function
+      ],
       "settings": {
-        "foreground": "#86a0b8"
+        "foreground": "#6AACC6",
+        "fontStyle": "italic"
       }
     },
+    {
+      "scope": ["variable.parameter.js", "variable.parameter.keyframe-list.css"],
+      "settings": {
+        "foreground": "#D6B89F"
+      }
+    },
+
     {
       "scope": ["variable.parameter.function.language.special", "variable.parameter"],
       "settings": {
@@ -970,6 +943,12 @@
       }
     },
     {
+      "scope": ["support.other.variable"],
+      "settings": {
+        "foreground": "#86a0b8"
+      }
+    },
+    {
       "scope": ["source.js constant.other.object.key.js string.unquoted.label.js"],
       "settings": {
         "foreground": "#f77676",
@@ -981,12 +960,6 @@
     // Colors, numeric constants, language constants, escape characters.
     // ====================
     {
-      "scope": ["variable.other.constant.js"],
-      "settings": {
-        "foreground": "#97c1cc"
-      }
-    },
-    {
       "scope": ["constant.numeric", "constant.language", "constant.character", "constant.escape"],
       "settings": {
         "foreground": "#bbbbbb"
@@ -997,6 +970,12 @@
       "settings": {
         "foreground": "#A6ACA6",
         "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["variable.other.constant.js"],
+      "settings": {
+        "foreground": "#97c1cc"
       }
     },
     {
@@ -1016,30 +995,44 @@
     // Quoted strings, raw strings, docstrings, regex, markdown inline raw.
     // ====================
     {
-      "scope": ["string constant.other.placeholder"],
+      "scope": [
+        "punctuation.definition.string.begin.html",
+        "punctuation.definition.string.end.html",
+        "punctuation.definition.string.begin.js",
+        "punctuation.definition.string.end.js",
+        "string",
+        "string.quoted.double.html",
+        "string.quoted.double.json"
+      ],
       "settings": {
-        "foreground": "#BBBBBB"
+        "foreground": "#76baa8"
       }
     },
     {
-      "scope": ["string constant.other.placeholder"],
-      "settings": {
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": ["keyword.other.template", "keyword.other.substitution"],
+      "scope": ["keyword.other.template", "keyword.other.substitution", "string.quoted.single.scss"],
       "settings": {
         "foreground": "#6195e3"
+      }
+    },
+    {
+      "scope": ["*url*", "*link*", "*uri*"],
+      "settings": {
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "scope": ["string constant.other.placeholder"],
+      "settings": {
+        "foreground": "#BBBBBB",
+        "fontStyle": "italic"
       }
     },
     {
       "scope": [
         // "punctuation.definition",
-        "string.quoted.single.scss"
       ],
       "settings": {
-        "foreground": "#6195e3"
+        // "foreground": ""
       }
     },
     {
@@ -1047,23 +1040,6 @@
       "settings": {
         "foreground": "#a0b3a2"
         // "fontStyle": "bold"
-      }
-    },
-    {
-      "scope": ["string", "string.quoted.double.html", "string.quoted.double.json"],
-      "settings": {
-        "foreground": "#76baa8"
-      }
-    },
-    {
-      "scope": [
-        "punctuation.definition.string.begin.html",
-        "punctuation.definition.string.end.html",
-        "punctuation.definition.string.begin.js",
-        "punctuation.definition.string.end.js"
-      ],
-      "settings": {
-        "foreground": "#76baa8"
       }
     },
     {
@@ -1091,41 +1067,10 @@
         "foreground": "#6C9FA8"
       }
     },
-    {
-      "scope": ["*url*", "*link*", "*uri*"],
-      "settings": {
-        "fontStyle": "underline"
-      }
-    },
     // ====================
     // 7. CSS / SCSS / SASS
     // Selectors, properties, units, interpolation, at‑rules, keyframes.
     // ====================
-    {
-      "scope": ["variable.css"],
-      "settings": {
-        "foreground": "#6AACC6"
-      }
-    },
-    {
-      "scope": ["constant.other.color"],
-      "settings": {
-        "foreground": "#CCD6F6"
-        // "foreground": "#6195e3",
-      }
-    },
-    {
-      "scope": ["entity.name.tag.reference.scss"],
-      "settings": {
-        "foreground": "#6195e3"
-      }
-    },
-    {
-      "scope": ["keyword.control.at-rule", "punctuation.terminator.rule.css", "punctuation.definition.entity.css"],
-      "settings": {
-        "foreground": "#DCC39F"
-      }
-    },
     {
       "scope": [
         "source.css support.type.property-name",
@@ -1140,9 +1085,34 @@
       }
     },
     {
+      "scope": ["keyword.control.at-rule", "punctuation.terminator.rule.css", "punctuation.definition.entity.css"],
+      "settings": {
+        "foreground": "#DCC39F"
+      }
+    },
+    {
       "scope": ["entity.other.attribute-name.pseudo-class", "entity.name.tag.css"],
       "settings": {
         "foreground": "#DEB887"
+      }
+    },
+    {
+      "scope": ["variable.css"],
+      "settings": {
+        "foreground": "#6AACC6"
+      }
+    },
+    {
+      "scope": ["constant.other.color"],
+      "settings": {
+        "foreground": "#BBBBBB"
+        // "foreground": "#6195e3",
+      }
+    },
+    {
+      "scope": ["entity.name.tag.reference.scss"],
+      "settings": {
+        "foreground": "#6195e3"
       }
     },
 
@@ -1166,70 +1136,10 @@
       }
     },
 
+    // ====================
     // 9. MARKDOWN
     // Headings, bold, italic, fenced code blocks, links, raw blocks.
     // ====================
-    {
-      "scope": ["markup.fenced_code.block.markdown", "markup.bold", "markup.bold.markdown", "markup.italic.markdown"],
-      "settings": {
-        "foreground": "#76baa8"
-      }
-    },
-    {
-      "scope": ["markup.table"],
-      "settings": {
-        "foreground": "#86a0b8"
-      }
-    },
-    {
-      "scope": ["markup.heading"],
-      "settings": {
-        "foreground": "#A6ACA6",
-        "fontStyle": ""
-      }
-    },
-    {
-      "scope": [
-        "text.html.markdown",
-        "punctuation.definition.list_item.markdown",
-        "punctuation.definition.heading.markdown",
-        "punctuation.definition.link.markdown"
-      ],
-      "settings": {
-        "foreground": "#a6aca6"
-      }
-    },
-    {
-      "scope": ["text.html.markdown markup.inline.raw.markdown"],
-      "settings": {
-        "foreground": "#bb9af7"
-      }
-    },
-    {
-      "scope": ["text.html.markdown markup.inline.raw.markdown", "punctuation.definition.raw.markdown"],
-      "settings": {
-        "foreground": "#bb9af7"
-      }
-    },
-    {
-      "scope": ["text.html.markdown meta.dummy.line-break"],
-      "settings": {
-        "foreground": "#565f89"
-      }
-    },
-    {
-      "scope": [
-        "markdown.heading",
-        "markup.heading | markup.heading entity.name",
-        "markup.heading.markdown",
-        "entity.name.section.markdown",
-        "markup.inline.raw.string.markdown"
-      ],
-      "settings": {
-        "foreground": "#748a6c"
-        // "fontStyle": "bold"
-      }
-    },
     {
       "scope": [
         "markup.bold.markdown",
@@ -1247,9 +1157,68 @@
       }
     },
     {
-      "scope": ["markup.strike"],
+      "scope": [
+        "markup.heading",
+        "text.html.markdown",
+        "punctuation.definition.list_item.markdown",
+        "punctuation.definition.heading.markdown",
+        "punctuation.definition.link.markdown"
+      ],
       "settings": {
-        // "foreground": "#
+        "foreground": "#a6aca6"
+      }
+    },
+    {
+      "scope": [
+        "markdown.heading",
+        "markup.heading | markup.heading entity.name",
+        "markup.heading.markdown",
+        "entity.name.section.markdown",
+        "markup.inline.raw.string.markdown"
+      ],
+      "settings": {
+        "foreground": "#748a6c"
+        // "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "variable.language.fenced.markdown",
+        "markup.raw.block",
+        "string.other.link.description.title.markdown"
+      ],
+      "settings": {
+        "foreground": "#6F8865"
+      }
+    },
+    {
+      "scope": ["markup.fenced_code.block.markdown", "markup.italic.markdown"],
+      "settings": {
+        "foreground": "#76baa8"
+      }
+    },
+    {
+      "scope": ["text.html.markdown markup.inline.raw.markdown", "punctuation.definition.raw.markdown"],
+      "settings": {
+        "foreground": "#9FA8DA"
+      }
+    },
+    {
+      "scope": ["punctuation.definition.markdown"],
+      "settings": {
+        "foreground": "#a2cabd"
+      }
+    },
+    {
+      "scope": ["markup.table"],
+      "settings": {
+        "foreground": "#86a0b8"
+      }
+    },
+    {
+      "scope": ["text.html.markdown meta.dummy.line-break"],
+      "settings": {
+        "foreground": "#565f89"
       }
     },
     {
@@ -1265,33 +1234,9 @@
       }
     },
     {
-      "scope": ["string.other.link.description.title.markdown"],
-      "settings": {
-        "foreground": "#6F8865"
-      }
-    },
-    {
       "scope": ["constant.other.reference.link.markdown"],
       "settings": {
         "foreground": "#73daca"
-      }
-    },
-    {
-      "scope": ["markup.raw.block"],
-      "settings": {
-        "foreground": "#6F8865"
-      }
-    },
-    {
-      "scope": ["punctuation.definition.raw.markdown", "punctuation.definition.markdown"],
-      "settings": {
-        "foreground": "#a2cabd"
-      }
-    },
-    {
-      "scope": ["variable.language.fenced.markdown"],
-      "settings": {
-        "foreground": "#6F8865"
       }
     },
     {
@@ -1301,6 +1246,8 @@
         "fontStyle": "bold"
       }
     },
+
+    // ====================
     // 10. MARKUP
     // Headings, bold, italic, fenced code blocks, links, raw blocks.
     // ====================
@@ -1317,7 +1264,7 @@
     {
       "scope": ["markup.deleted.git_gutter"],
       "settings": {
-        "foreground": "#7391C8"
+        "foreground": "#ff6b6b"
       }
     },
     {
@@ -1330,7 +1277,7 @@
     {
       "scope": ["markup.changed.git_gutter"],
       "settings": {
-        "foreground": "#7391C8"
+        "foreground": "#f8dc81"
       }
     },
     {
@@ -1359,7 +1306,7 @@
     {
       "scope": ["invalid.deprecated"],
       "settings": {
-        "foreground": "#BBBBBB"
+        "foreground": "#e88a8a"
       }
     },
     {
@@ -1372,26 +1319,6 @@
     // 13. OPERATORS & PUNCTUATION
     // Operators, delimiters, separators, terminators, brackets, braces, commas, colons, and structural       punctuation across languages.
     // ====================
-    {
-      "scope": [
-        "keyword.operator.assignment", // changes color of = / +=
-        "keyword.operator.new", // changes color of new in ' = new User()'
-        "keyword.operator.arithmetic", // changes color of *, -
-        "punctuation.separator" // changes colors of comma, :, . ,
-      ],
-      "settings": {
-        "foreground": "#BBBBBB"
-      }
-    },
-    {
-      "scope": [
-        "keyword.control.import", // changes color of 'import'
-        "keyword.control.export" // changes color of 'export'
-      ],
-      "settings": {
-        // "foreground": "#5083A8"
-      }
-    },
     {
       "scope": [
         "keyword.control.flow",
@@ -1408,9 +1335,16 @@
       }
     },
     {
-      "scope": ["entity.name.type.module.js"],
+      "scope": [
+        "keyword.operator.assignment", // changes color of = / +=
+        "keyword.operator.new", // changes color of new in ' = new User()'
+        "keyword.operator.arithmetic", // changes color of *, -
+        "punctuation.separator", // changes colors of comma, :, . ,
+        "keyword.other.unit",
+        "keyword.other"
+      ],
       "settings": {
-        "foreground": "#6195e3"
+        "foreground": "#BBBBBB"
       }
     },
     {
@@ -1425,13 +1359,6 @@
       }
     },
     {
-      "scope": ["storage.type.js"],
-      "settings": {
-        "foreground": "#5083a8",
-        "fontStyle": ""
-      }
-    },
-    {
       "scope": [
         "keyword.other.special-method",
         "meta.class-method.js entity.name.function.js",
@@ -1442,14 +1369,29 @@
       }
     },
     {
-      "name": "Keywords / Operators / Control",
-      "scope": ["keyword.other.unit", "keyword.other"],
+      "scope": [
+        "keyword.control.import", // changes color of 'import'
+        "keyword.control.export" // changes color of 'export'
+      ],
       "settings": {
-        "foreground": "#bbbbbb"
+        // "foreground": "#5083A8"
       }
     },
     {
-      "scope": ["keyword.other.unit", "meta.group.braces.curly"],
+      "scope": ["entity.name.type.module.js"],
+      "settings": {
+        "foreground": "#6195e3"
+      }
+    },
+    {
+      "scope": ["storage.type.js"],
+      "settings": {
+        "foreground": "#5083a8",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["meta.group.braces.curly"],
       "settings": {
         "foreground": "#A6ACA6",
         "fontStyle": ""
