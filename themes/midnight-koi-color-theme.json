@@ -1317,7 +1317,7 @@
     },
     // ====================
     // 13. OPERATORS & PUNCTUATION
-    // Operators, delimiters, separators, terminators, brackets, braces, commas, colons, and structural       punctuation across languages.
+    // Operators, delimiters, separators, terminators, brackets, braces, commas, colons, and structural punctuation across languages.
     // ====================
     {
       "scope": [
