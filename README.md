@@ -13,30 +13,6 @@ a tranquil and calming theme designed for developers who prefer a dark interface
 
 You can further customize the theme by modifying your settings in settings.json. For example, you can adjust the font size, line height, and other editor settings to enhance your experience.
 
-## React example
-
-![React](img/React.png)
-
-## Javascript Example
-
-![Javascript](img/Javascript.png)
-
-## Python Example
-
-![Python](img/Python.png)
-
-## HTML Example
-
-![HTML](img/HTML.png)
-
-## CSS Example
-
-![CSS](img/HTML.png)
-
-## README Example
-
-![README](img/README.png)
-
 ## Bracket Color Setup (Recommended)
 
 This theme uses a custom bracket‑color palette for improved readability.  
@@ -78,3 +54,27 @@ Add this if it is not already enabled:
 ### Done!
 
 Your brackets will now use the same color system the theme was designed around.
+
+## React example
+
+![React](img/React.png)
+
+## Javascript Example
+
+![Javascript](img/Javascript.png)
+
+## Python Example
+
+![Python](img/Python.png)
+
+## HTML Example
+
+![HTML](img/HTML.png)
+
+## CSS Example
+
+![CSS](img/HTML.png)
+
+## README Example
+
+![README](img/README.png)
