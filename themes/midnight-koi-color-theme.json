@@ -14,7 +14,7 @@
     // ============================
     // BADGES
     // ============================
-    "badge.background": "#ce8080",
+    "badge.background": "#a86464",
     "badge.foreground": "#ccd6f6",
 
     // ============================
@@ -42,7 +42,7 @@
     // ============================
     // DEBUG TOOLBAR
     // ============================
-    "debugToolBar.background": "#8C92AC",
+    "debugToolBar.background": "#5a6076",
 
     // ============================
     // DIFF EDITOR
@@ -130,7 +130,7 @@
     // ============================
     // LINE NUMBERS
     // ============================
-    "editorLineNumber.activeForeground": "#FFB26F",
+    "editorLineNumber.activeForeground": "#cfa57a",
     "editorLineNumber.foreground": "#8C92AC",
 
     // ============================
@@ -162,9 +162,9 @@
     // ============================
     "editorSuggestWidget.background": "#1c1d24",
     "editorSuggestWidget.border": "#CCD6F610",
-    "editorSuggestWidget.foreground": "#d1925f",
+    "editorSuggestWidget.foreground": "#A6ACA6",
     "editorSuggestWidget.highlightForeground": "#CCD6F6",
-    "editorSuggestWidget.selectedBackground": "#8C92AC",
+    "editorSuggestWidget.selectedBackground": "#5a6076",
 
     // ============================
     // GIT DECORATIONS
@@ -195,9 +195,9 @@
     "list.activeSelectionForeground": "#bb906e",
     "list.focusBackground": "#7391C830",
     "list.focusForeground": "#8C92AC",
-    "list.highlightForeground": "#ccb197",
+    "list.highlightForeground": "#AFC7FF",
     "list.hoverBackground": "#7391C830",
-    "list.hoverForeground": "#9e644f",
+    "list.hoverForeground": "#AFC7FF",
     "list.inactiveSelectionBackground": "#131419",
     "list.inactiveSelectionForeground": "#a5a9af",
     "list.warningForeground": "#ff6b6b",
@@ -243,9 +243,9 @@
     // ============================
     "panel.background": "#131419",
     "panel.border": "#363744",
-    "panelTitle.activeBorder": "#ddc6a8",
+    "panelTitle.activeBorder": "#cbb89a",
     "panelTitle.activeForeground": "#CCD6F6",
-    "panelTitle.inactiveForeground": "#7391C8",
+    "panelTitle.inactiveForeground": "#6A86B8",
 
     // ============================
     // PEEK VIEW
@@ -302,10 +302,10 @@
     // ============================
     "sideBar.background": "#131419",
     "sideBar.border": "#363744",
-    "sideBar.foreground": "#b1a192",
+    "sideBar.foreground": "#A6ACA6",
     "sideBarSectionHeader.background": "#131419",
     "sideBarSectionHeader.border": "#363744",
-    "sideBarSectionHeader.foreground": "#abbadf",
+    "sideBarSectionHeader.foreground": "#9FAEC8",
     "sideBarTitle.foreground": "#7391C8",
 
     // ============================
@@ -313,9 +313,9 @@
     // ============================
     "statusBar.background": "#131419",
     "statusBar.border": "#363744",
-    "statusBar.debuggingBackground": "#5183B6",
-    "statusBar.debuggingForeground": "#D6CFC4",
-    "statusBar.foreground": "#838FAB",
+    "statusBar.debuggingBackground": "#4A6F9A",
+    "statusBar.debuggingForeground": "#C9D1D9",
+    "statusBar.foreground": "#8C92AC",
     "statusBar.noFolderBackground": "#131419",
     "statusBarItem.hoverBackground": "#506181",
     "statusBarItem.remoteBackground": "#131419",
@@ -354,7 +354,7 @@
     // TITLE BAR
     // ============================
     "titleBar.activeBackground": "#131419",
-    "titleBar.activeForeground": "#5183B6",
+    "titleBar.activeForeground": "#5F7FB0",
     "titleBar.border": "#363744",
     "titleBar.inactiveBackground": "#131419",
     "titleBar.inactiveForeground": "#5183B6",
